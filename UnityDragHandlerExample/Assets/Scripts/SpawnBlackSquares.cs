@@ -12,6 +12,7 @@ public class SpawnBlackSquares : MonoBehaviour {
             GameObject.Instantiate(spriteToDuplicate, currentPosition, Quaternion.identity);
             currentPosition += new Vector3(3f, 0f, 0f);
         }
+        Destroy(spriteToDuplicate);
     }
 
 	
